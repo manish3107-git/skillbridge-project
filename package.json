@@ -1,0 +1,23 @@
+{
+  "name": "skillbridge-monorepo",
+  "version": "1.0.0",
+  "description": "SkillBridge - AI-Powered Career Bottleneck Detection and Improvement Platform",
+  "private": true,
+  "scripts": {
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "setup:backend": "cd backend && npm install",
+    "setup:frontend": "cd frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "career",
+    "bottleneck-detection",
+    "ai",
+    "skills-analysis",
+    "hackathon"
+  ],
+  "author": "SkillBridge Team",
+  "license": "MIT"
+}
