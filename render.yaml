@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: skillbridge-backend-api
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node src/server.js
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: skillbridge_super_secret_jwt_key_2026
+      - key: SUPABASE_URL
+        value: https://arombcgsuazmiqjuxlsf.supabase.co
+      - key: SUPABASE_KEY
+        value: sb_publishable__0YMrHM9rb0MF3YttjogGQ_l971pYuy
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: CLIENT_URL
+        sync: false
